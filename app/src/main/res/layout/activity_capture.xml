@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.romvillarica.recipegram.CaptureActivity">
+
+    <TextView
+        android:id="@+id/newpost"
+        android:layout_width="300dp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="10dp"
+        android:text="New post"
+        android:textSize="24dp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="15dp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="60sp">
+
+        <ImageView
+            android:id="@+id/picture1_frame"
+            android:background="@drawable/back"
+            android:layout_width="190sp"
+            android:layout_height="190sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"/>
+
+        <ImageView
+            android:id="@+id/picture2_frame"
+            android:background="@drawable/back"
+            android:layout_width="190sp"
+            android:layout_height="190sp"
+            android:layout_toRightOf="@id/picture1_frame"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/upload_picture1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picture1_frame"
+            android:layout_alignLeft="@id/picture1_frame"
+            android:text="upload"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/take_picture1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picture1_frame"
+            android:layout_toRightOf="@id/upload_picture1_button"
+            android:text="take new"
+            android:fontFamily="serif"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/upload_picture2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picture2_frame"
+            android:layout_alignLeft="@id/picture2_frame"
+            android:text="upload"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/take_picture2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picture1_frame"
+            android:layout_toRightOf="@id/upload_picture2_button"
+            android:text="take new"
+            android:fontFamily="serif"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_gravity= "bottom"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/save_post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:layout_gravity="right|bottom"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginTop="320sp"
+        android:textStyle="italic"
+        android:hint="describe your dish"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+    <EditText
+        android:id="@+id/instructions"
+        android:layout_width="400dp"
+        android:layout_height="195dp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginTop="390sp"
+        android:hint="give instructions on making your dish"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+
+    <Button
+        android:id="@+id/view_recipe_button"
+        android:layout_width="450sp"
+        android:layout_height="150sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:text="X"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="110sp"
+        android:layout_height="110sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description"
+        android:layout_alignTop="@+id/picture"
+        android:text="Loading user..."
+        android:layout_marginTop="12sp"
+        android:textSize="12sp"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description"
+        android:layout_below="@+id/user"
+        android:text="Loading date..."
+        android:layout_marginTop="3sp"
+        android:textSize="12sp"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:rating="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_below="@+id/date"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:layout_marginTop="3sp"/>
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rating_bar"
+        android:layout_alignEnd="@+id/view_recipe_button"
+        android:layout_alignRight="@+id/view_recipe_button"
+        android:layout_marginTop="3sp"
+        android:layout_marginRight="30sp"
+        android:textStyle="italic"
+        android:text="Loading description..."
+        android:textSize="12sp"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

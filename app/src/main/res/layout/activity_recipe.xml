@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.romvillarica.recipegram.CaptureActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginTop="30dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250sp">
+            <TextView
+                android:id="@+id/before"
+                android:layout_width="160dp"
+                android:layout_height="35sp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignLeft="@id/picture1_frame"
+                android:text="Before"
+                android:textSize="18dp"
+                android:fontFamily="serif"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="15dp"
+                android:textAlignment="center"
+                android:padding="7dp"
+                android:layout="@+id/picture1_frame"/>
+
+            <TextView
+                android:id="@+id/after"
+                android:layout_width="160dp"
+                android:layout_height="35sp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignLeft="@id/picture2_frame"
+                android:text="After"
+                android:textSize="18dp"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="15dp"
+                android:padding="7dp"
+                android:layout="@+id/picture1_frame"/>
+
+            <ImageView
+                android:id="@+id/picture1_frame"
+                android:background="@drawable/back"
+                android:layout_width="190sp"
+                android:layout_height="190sp"
+                android:layout_marginLeft="10sp"
+                android:layout_below="@id/before"/>
+
+            <ImageView
+                android:id="@+id/picture2_frame"
+                android:background="@drawable/back"
+                android:layout_width="190sp"
+                android:layout_height="190sp"
+                android:layout_toRightOf="@id/picture1_frame"
+                android:layout_marginLeft="10sp"
+                android:layout_below="@id/after"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/8/18"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="250sp"
+            android:textSize="12sp"
+            android:layout_marginStart="10sp"
+            android:visibility="gone"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:rating="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:layout_marginTop="245sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/description"
+            android:text="Description Loading..."
+            android:padding="7dp"
+            android:textStyle="italic"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="310sp"
+            android:layout_marginStart="6sp"
+            android:fontFamily="serif"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/instructions"
+            android:background="@drawable/back"
+            android:text="Instructions Loading..."
+            android:padding="7dp"
+            android:layout_width="400dp"
+            android:layout_height="210dp"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="360sp"
+            android:layout_marginStart="6sp"
+            android:fontFamily="serif"
+            android:textAllCaps="false"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="bottom"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/like_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I like this"
+        android:layout_gravity="end|bottom"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/dislike_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a fan"
+        android:layout_marginLeft="70dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="70dp"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for your input!"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="14sp"
+        android:textSize="14sp"
+        android:layout_marginEnd="10sp"
+        android:layout_gravity="bottom|right"
+        android:fontFamily="serif"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>
